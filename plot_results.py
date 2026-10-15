@@ -3,7 +3,7 @@ import csv
 import matplotlib.pyplot as plt
 
 def generate_plots():
-    csv_file = "benchmark_results.csv"
+    csv_file = "results.csv"
     if not os.path.exists(csv_file):
         print(f"Error: {csv_file} not found!")
         return

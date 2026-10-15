@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
 
     std::vector<int> grid_sizes = {128, 256, 512, 1024, 2048, 4096};
 
-    std::ofstream csv_file("benchmark_results.csv");
+    std::ofstream csv_file("results.csv");
     csv_file << "GridSize,TotalCells,CPU_Time_ms,CUDA_Global_ms,CUDA_Shared_ms,Speedup_Global,Speedup_Shared\n";
 
     std::cout << std::left 
@@ -94,7 +94,7 @@ int main(int argc, char** argv) {
 
     csv_file.close();
     std::cout << std::string(110, '-') << "\n";
-    std::cout << "\n[✓] Benchmark complete. Results saved to benchmark_results.csv\n";
+    std::cout << "\n[✓] Benchmark complete. Results saved to results.csv\n";
     
     // Automatically generate and overwrite plot image files
     std::cout << "[*] Generating updated high-resolution chart images...\n";

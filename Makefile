@@ -31,6 +31,6 @@ $(TARGET_GUI): $(OBJS_COMMON) $(SRC_DIR)/gui_main.cu
 	$(NVCC) $(NVCCFLAGS) $^ -o $@ $(LDFLAGS)
 
 clean:
-	rm -rf $(OBJ_DIR) $(TARGET_BENCH) $(TARGET_GUI) benchmark_results.csv
+	rm -rf $(OBJ_DIR) $(TARGET_BENCH) $(TARGET_GUI) results.csv
 
 .PHONY: all clean
